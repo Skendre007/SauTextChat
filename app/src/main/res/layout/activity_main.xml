@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="#D1CB99">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SauTextChat"
+                android:textColor="#303F9F"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter contact number" />
+
+            <ImageView
+                android:id="@+id/imageViewPickContact"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/phone_img"
+                android:contentDescription="Pick contact"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your MSG"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your message" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="#D1CB99">
+
+        <Button
+            android:id="@+id/buttonSendSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#201B1B"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="Send SMS" />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
